@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Macondo&family=Metal+Mania&display=swap');
+
+$background:#7C4C27;
+$coffee:#362D26;
+$milk:#DCD9CD;
+$white:#ffffff;
+$black:#000000;
+
+@mixin h2-style(){
+    text-align: center;
+    margin: 0 auto;
+    background-color: $milk;
+    font-family: Metal Mania;
+    padding: 10px 10px;
+    letter-spacing: 3px;
+}
+
+@mixin h3-style(){
+
+        background-color: $milk;
+        color: $black;
+        text-align: center;
+        margin: 0 auto;
+    }
+@mixin h4-style(){
+    text-align: center;
+    margin-top: 4px;
+    color: $milk;
+}
+*{
+    margin: 0 auto;
+}
+#header{
+    background-color: $background;
+}
+
+.navbar{
+    background-color: $coffee;
+    .container-fluid{
+        .navbar-brand{
+            color: $milk;
+            font-size: 30px;
+            margin-right: 20%;
+            margin-left: 5%;
+            font-family: Metal Mania;
+            letter-spacing: 5px;
+        }
+    }
+}
+
+.collapse{
+ ul{
+   li{
+    padding-right: 20px;
+    a{
+        color: $milk;
+        font-size: 20px;
+        font-family: Macondo;
+    }
+   }
+ }
+form{
+    input[type="search"]{
+        background-color: #7C4C27;
+        color: $milk;
+        &::placeholder{
+        color:$milk ;
+        }
+    }
+}
+button{
+    background-color: $milk;
+    color: $coffee;
+   
+}
+}
+
+
+.home-content{
+   .home-text{
+    background-color: $milk;
+    text-align: center;
+    p{
+        margin: 0 auto;
+    }
+
+   }
+   .container-fluid{
+    margin: 0 auto;
+    .row{
+        img{
+        border: 4px solid $black;
+        width: 600px;
+        height: 300px;
+        }
+    }
+}
+}
+#menu{
+    background-color: $milk;
+    h2{
+      @include h2-style();
+    }
+    h3{
+       @include h3-style();
+    }
+    h4{
+       @include h4-style();
+    }
+    .card{
+        background-color: $background;
+    }
+    img{
+        height: 500px;
+        width: 100%;
+    }
+}
+
+#our-team{
+    background-color: $milk;
+    
+    h2{
+        @include h2-style();
+    }
+    .card{
+        background-color: $background;
+    }
+    img{
+        height: 500px;
+        width: 100%;
+    }
+    h3{
+        @include h3-style();
+    }
+    h4{
+        @include h4-style();
+    }
+}
+
+#about{
+    background-color: $milk;
+    .row{
+        border: black;
+        h2{
+            @include h2-style();
+        }
+        p{
+            text-align: center;
+            font-family: Great Vibes;
+            font-size: 30px;
+        }
+    }
+}
+
+#form{
+    row{
+        margin: 0 auto;
+    }
+    background-color: $milk;
+    h2{
+        @include h2-style();
+    }
+    label{
+        display: block;
+        font-family: Metal Mania;
+        font-size: 30px;
+    }
+    input{
+        width: 60%;
+        padding: 4px;
+        border-radius: 20px;
+        background-color: $background;
+        &::placeholder{
+            color: $milk;
+        }
+    }
+    #message{
+        background-color: $background;
+        width: 60%;
+        height: 200px;
+        &::placeholder{
+            color: $milk;
+        }
+    }
+    button{
+        background-color: $coffee;
+        color: $milk;
+        padding: 5px;
+        border-radius: 20px;
+        margin: 10px;
+        &:hover{
+            color: white;
+            background-color: $background;
+        }
+    }
+
+}
+
+.container-f{
+    background-color: $background;
+    text-align: center;
+    h3{
+        @include h3-style();
+        font-family: Metal Mania;
+        margin: 20px 20px;
+    }
+    h5{
+        color: $milk;
+    }
+    a{
+        color: $milk;
+        &:hover{
+            background-color: #362D26;
+            color: white;
+        }
+    }
+}
